@@ -1,0 +1,11 @@
+{
+    username,
+    password,
+    email,
+    first name,
+    last name,
+    date of birth,
+    picture,
+    start date,
+    membership
+}

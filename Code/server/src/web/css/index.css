@@ -1,0 +1,10 @@
+.col {
+    float: left !important;
+    width: 50% !important;
+}
+
+.row:after {
+    content: "" !important;
+    display: table !important; 
+    clear: both !important;
+}

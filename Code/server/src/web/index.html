@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="javascript/index.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <script>
+        window.onload = loadPage;
+    </script>
+    
+    <div class="row">
+        <div class="col">
+            <a onclick="testLoad();" href="javascript:void(0);">test load</a>
+            <a onclick="testLogin();" href="javascript:void(0)">test login</a>
+            <h1>Welcome to BitBook's Server!</h1>
+            <div id="loginDiv" hidden="true">
+                <a id="loginAnchor" onclick="login();" href="javascript:void(0)">login</a><br>
+                <a id="registerAnchor" onclick="register();" href="javascript:void(0)">register</a>
+            </div>
+            <div id="logoutDiv" hidden="true">
+                <p id="welcomeUser"></p>
+                <a id="logoutAnchor" onclick="logout();" href="javascript:void(0)";>logout</a>
+            </div>
+
+            <div id="currentLocations">
+            <h4>Current Locations:</h4>
+            <li>/index.html (current location)</li>
+            <li>nowhere else, where else should we go?</li>
+            </div>
+
+            <div>
+                <h4>Future Additions</h4>
+                <li>Home/Login Page</li>
+                <li>Database</li>
+                <li>More Handlers</li>
+                <li>DAOs</li>
+                <li>Services</li>
+                <li>Handle Clients</li>
+                <li>Users/Account page</li>
+                <li>Upload Pictures</li>
+            </div>
+        </div>
+        <div class="col" id="loginCol" hidden="true">
+            <br><h3>Login</h3>
+            <input id="loginUsername" placeholder="Username">
+            <input id="loginPassword" type="password" placeholder="Password">
+            <input type="button" value="Login">
+        </div>
+        <div class="col" id="registerCol" hidden="true">
+            <br><h3>Register</h3>
+            <input id="registerUsername" placeholder="Username"><br>
+            <input id="registerPassword" placeholder="Password"><br>
+            <input id="registerConfirmPassword" placeholder="Confirm Password"><br>
+            <input id="registerEmail" placeholder="Email"><br>
+            <input id="registerFirstName" placeholder="First Name"><br>
+            <input id="registerLastName" placeholder="Last Name"><br>
+            DOB:<input id="registerDOB" type="date"><br>
+            Picture.... Upload<br>
+            <input type="button" value="Register">
+        </div>
+    </div> 
+</html>
